@@ -1,0 +1,132 @@
+
+POST http://localhost:2000/users/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "kukuh",
+    "password": "rahasia123",
+    "confirmPassword": "rahasia123",
+    "name": "kukuh aditya"
+}
+
+###
+POST http://localhost:2000/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "kukuh",
+    "password": "rahasia123",
+    "confirmPassword": "rahasia123"
+}
+
+###
+GET http://localhost:2000/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: cd2a3481-271f-4623-8f9b-bb89d2d32f23
+
+
+###
+PATCH http://localhost:2000/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: cd2a3481-271f-4623-8f9b-bb89d2d32f23
+
+{
+    "name": "Kukuh Aditya Update",
+    "password": "rahasia1234",
+    "confirmPassword": "rahasia1234"
+}
+
+###
+DELETE http://localhost:2000/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: 34de718e-b120-4c8d-a4c1-79ecc5a8d986
+
+### 27
+POST http://localhost:2000/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: 34de718e-b120-4c8d-a4c1-79ecc5a8d986
+
+{
+    "first_name": "kukuh",
+    "last_name": "aditya",
+    "email": "kukuh@gmail.com",
+    "phone": "098988778"
+}
+
+### 27
+GET http://localhost:2000/contacts/27
+Content-Type: application/json
+Accept: application/json
+Authorization: 34de718e-b120-4c8d-a4c1-79ecc5a8d986
+
+
+###
+PUT http://localhost:2000/contacts/27
+Content-Type: application/json
+Accept: application/json
+Authorization: 34de718e-b120-4c8d-a4c1-79ecc5a8d986
+
+{
+    "first_name": "kukuh Update",
+    "last_name": "aditya update",
+    "email": "kukuh@gmail.com",
+    "phone": "098988778"
+}
+
+###
+DELETE http://localhost:2000/contacts/27
+Content-Type: application/json
+Accept: application/json
+Authorization: 34de718e-b120-4c8d-a4c1-79ecc5a8d986
+
+###
+POST http://localhost:2000/contacts/28/address
+Content-Type: application/json
+Accept: application/json
+Authorization: 34de718e-b120-4c8d-a4c1-79ecc5a8d986
+
+{
+    "street": "Citra 4",
+    "city": "Tangerang Bitung",
+    "province": "Banten Serang",
+    "country": "Indonesia Timur",
+    "postal_code": "2039"
+}
+
+###
+PUT http://localhost:2000/contacts/28/address/13
+Content-Type: application/json
+Accept: application/json
+Authorization: 34de718e-b120-4c8d-a4c1-79ecc5a8d986
+
+{
+    "street": "Azelia 8 No 2 UPDATE",
+    "city": "Tangerang UPDATE",
+    "province": "Banten UPDATE",
+    "country": "Indonesia UPDATE",
+    "postal_code": "15720 UPDT"
+}
+
+###
+GET http://localhost:2000/contacts/28/address/13
+Content-Type: application/json
+Accept: application/json
+Authorization: 34de718e-b120-4c8d-a4c1-79ecc5a8d986
+
+###
+DELETE http://localhost:2000/contacts/28/address/14
+Content-Type: application/json
+Accept: application/json
+Authorization: 34de718e-b120-4c8d-a4c1-79ecc5a8d986
+
+###
+GET http://localhost:2000/contacts/28/address
+Content-Type: application/json
+Accept: application/json
+Authorization: 34de718e-b120-4c8d-a4c1-79ecc5a8d986
